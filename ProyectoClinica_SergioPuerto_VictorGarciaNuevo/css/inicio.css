@@ -1,0 +1,257 @@
+@charset "UTF-8";
+/*Colores*/
+/*Bordes*/
+/*Tamaños fuentes*/
+/*Contendra todos los estilos que se repitan en todas las paginas o que se repitan en varias y con frecuencia*/
+/*titulos esta en todas las paginas*/
+.titulos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  text-align: center;
+  width: 300px;
+  color: #FFFFFF;
+  font-size: 1.25em;
+  background-color: #04B1E8;
+  border: 3px solid #094592;
+  border-radius: 40px;
+  margin-bottom: 15px;
+  margin-top: 40px;
+}
+
+/*Hace referencia a mainContent esta en Conocenos, Especialidades, Politicas y Galeria*/
+/*Hace referencia a contenido1 esta Inicio, Citas, Empleo y Galeria*/
+/*Hace referencia a row esta en todas las paginas*/
+/*Hace referencia a horario esta en Inicio, Citas y Empleo*/
+/*Hace referencia a horarioTitulo esta en Inicio, Citas y Empleo*/
+/*Hace referencia a horarioContenidos esta en Inicio, Citas y Empleo*/
+/*Hace referencia a varios contenidos esta en Inicio, Conocenos, Empleo y Especialidades*/
+/*Hace referencia a contenido2 esta en Inicio, Citas y Empleo*/
+/*Hace referencia a los estilos de las columnmas para los diversos servicios de la clinica esta en Inicio y Especialidades*/
+/*Hace referencia a card que seran los desplegables de los servicios esta en Inicio y Especialidades */
+/*Hace referencia a card-header que seran los desplegables de los servicios esta en Inicio y Especialidades */
+/*Hace referencia a card-body que seran los desplegables de los servicios esta en Inicio y Especialidades */
+/*Hace referencia a carousel esta en Inicio, Galeria, Conocenos y Tienda*/
+/*BODY*/
+/*Estilo de la imagen*/
+.imagen {
+  width: 100%;
+}
+
+/*Estilo del contenido1 (contBienvenida y horarios)*/
+.contenido1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin: 0 auto;
+  width: 90%;
+}
+
+/*Estilo de la columnas del contBienvenido y horarios*/
+.row {
+  padding-top: 1%;
+  margin: 0 auto;
+}
+
+.col-xl-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 50px;
+}
+
+/*Estilo del contenido*/
+.contBienvenida {
+  text-align: justify;
+}
+
+/*Estilo de los horarios*/
+.horario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 450px;
+  height: 250px;
+  border: 3px solid #094592;
+}
+
+/*Estilo del titulo de horarios*/
+.horarioTitulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 180px;
+  color: #FFFFFF;
+  font-size: 1.5em;
+  background-color: #04B1E8;
+  border: 3px solid #094592;
+  border-top: none;
+  border-left: none;
+}
+
+/*Estilo del contenido del horario*/
+.horarioContenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1em;
+}
+
+/*Estilo carrusel*/
+#carousel1 {
+  margin-top: 50px;
+}
+
+/*Estilos del contenido2 servicios destacados*/
+.contenido2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto 0;
+  margin-top: 40px;
+}
+
+.contServicios {
+  text-align: justify;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+/*Estilos para las columnas*/
+.servicios .row .col-md-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+  color: #04B1E8;
+}
+
+.col-md-4 h4 {
+  margin-top: 20px;
+}
+
+.col-md-4 img {
+  width: 150px;
+  height: 150px;
+}
+
+/*Los desplegables de los servicios*/
+.card {
+  border: 2px solid #094592;
+}
+
+.card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #FFFFFF;
+}
+
+.card-body {
+  text-align: justify;
+}
+
+/*Estilo contenido3 ubicacion*/
+.contenido3 {
+  width: 100%;
+}
+
+/*Estilo de la ubicacion*/
+.ubicacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto 0;
+  margin-top: 40px;
+}
+
+/*Media query*/
+@media (max-width: 1199px) {
+  .col-xl-4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 30px;
+  }
+  .horario {
+    height: 280px;
+  }
+  .horarioContenido {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 1.25em;
+  }
+  .contServicios {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
+/*# sourceMappingURL=inicio.css.map */

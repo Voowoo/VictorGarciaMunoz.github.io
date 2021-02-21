@@ -1,0 +1,50 @@
+/*BODY*/
+/*Estilo contenido principal*/
+#mainContent {
+  margin: 0 auto;
+  width: 90%;
+  margin-bottom: 60px;
+}
+
+/*Estilo del contenido*/
+.contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto 0;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+/*Estilo de las columnas*/
+.row {
+  padding-top: 1%;
+  margin: 0 auto;
+}
+
+/*Estilo del contenido*/
+.contGaleria {
+  text-align: justify;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+#carousel1 {
+  margin-top: 50px;
+}
+
+/*Media query*/
+@media (max-width: 1199px) {
+  .contGaleria {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
+/*# sourceMappingURL=galeria.css.map */

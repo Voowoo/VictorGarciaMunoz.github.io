@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Cookies</title>
+		<link rel="icon" type="image/png" href="../../../img/logo/logo-sin-nombre.png">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../../css/scss-principal.css">
+		<link rel="stylesheet" href="../../../css/politicas.css">
+</head>
+	<body>
+		<div class="pagina">
+		<!--Cabecera principal contiene Cabecera1 y nav del menu-->
+			<header class="mainHeader">
+				<!--Cabecera1 contiene cuadroClinica y miscelanea-->
+				<section id="cabecera1">
+					<!--cuadroClinica contiene el logo y nombre de la clinica-->
+					<div id="cuadroClinica">
+						<img src = "../../../img/logo/logo-sin-nombre.png">
+						<span class="nombreClinica">Clínica Cerbero</span>
+					</div> 
+					<!--miscelanea contiene los botones para cuenta y las redes-->
+					<nav class="miscelanea">
+						<!--cuenta contiene una lista con dos botones para el registro-->
+						<ul id="cuenta">
+							<li><a class="dropdown-item" data-toggle="modal" data-target="#registro" href="#">Registrarse</a></li>
+							<li><a class="dropdown-item" data-toggle="modal" data-target="#sesion" href="#">Iniciar Sesión</a></li>
+						</ul>
+						<!--redes contiene una lista con las redes-->
+						<ul id="redes">
+							<li>
+								<!--Boton el cual es un desplegable con las redes-->
+								<div class="dropdown">
+							    	<button class="btn btn-primary dropdown-toggle" type="button" id="dropdown1" data-toggle="dropdown">
+							        Redes
+							      	</button>
+							      	<div class="dropdown-menu">
+							        	<a class="dropdown-item" href="http://www.twitter.com" target="_blank"><img src="../../../img/iconos/twitter.png" width="20" height="20">&nbspTwitter</a>
+							        	<a class="dropdown-item" href="http://www.instagram.com" target="_blank"><img src="../../../img/iconos/instagram.png" width="20" height="20">&nbspInstagram</a>
+							        	<a class="dropdown-item" href="http://www.facebook.com" target="_blank"><img src="../../../img/iconos/facebook.png" width="20" height="20">&nbspFacebook</a>
+							      	</div>
+							    </div>  
+							</li>
+						</ul>
+						<!--redes contiene una lista con los idiomas-->
+						<ul id="idiomas">
+							<li>
+								<!--Boton el cual es un desplegable con los idiomas-->
+								<div class="dropdown">
+							    	<button class="btn btn-primary dropdown-toggle" type="button" id="dropdown1" data-toggle="dropdown">
+							        Idiomas
+							      	</button>
+							      	<div class="dropdown-menu">
+							      		<!--Idiomas disponibles-->
+							        	<a class="dropdown-item" href="#"><img src="../../../img/iconos/ingles.png" width="20" height="20">&nbspEnglish</a>
+							        	<a class="dropdown-item" href="#"><img src="../../../img/iconos/español.png" width="20" height="20">&nbspEspañol</a>							 
+							      	</div>
+							    </div>  
+							</li>
+						</ul>
+					</nav> 	
+				</section>
+				<!--Barra de navegacion contiene el menu con las opciones-->
+				<nav class="navbar navbar-expand-xl " id="barraNavegacion" >
+					<!--El boton sera un icono pero lo dejo blanco de mientras-->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones" style="background: white">
+					 	<img src = "../../../img/iconos/menu.png" width="25px" height="25px">
+					</button>
+					<!--Elementos del menu el cual colapsan en un boton-->
+					<div class="collapse navbar-collapse" id="opciones">   
+					    <ul class="navbar-nav" id="elemenentos">
+					    	<!--Cada uno de los elementos del menu-->
+					      	<li class="nav-item">
+			                  <a class="nav-link" href="../../Inicio/inicio.html" >&nbsp&nbspINICIO&nbsp&nbsp</a>
+			                </li>
+			                <li class="nav-item">
+			                  <a class="nav-link" href="../../Conocenos/conocenos.html">&nbsp&nbspCONÓCENOS&nbsp&nbsp&nbsp&nbsp</a>
+			                </li>
+			                <li class="nav-item">
+			                  <a class="nav-link" href="../../Especialidades/especialidades.html">&nbsp&nbspESPECIALIDADES&nbsp&nbsp</a>
+			                </li>
+			                <li class="nav-item">
+			                  <a class="nav-link" href="../../Cita/cita.html">&nbsp&nbspCITAS&nbsp&nbsp</a>
+			                </li>
+			                <li class="nav-item">
+			                  <a class="nav-link" href="../../Tienda/tienda.html">&nbsp&nbspTIENDA&nbsp&nbsp</a>
+			                </li>
+			                <li class="nav-item">
+			                  <a class="nav-link" href="../../Galeria/galeria.html">&nbsp&nbspGALERÍA&nbsp&nbsp</a>
+			                </li>
+			                <li class="nav-item">
+			                  <a class="nav-link" href="../../Empleo/empleo.html">&nbsp&nbspEMPLEO&nbsp&nbsp</a>
+			                </li>   
+					      </ul>
+					</div>
+				</nav>				
+			</header>
+			
+			<!--Cuerpo de la pagina donde iran los textos e imagenes-->
+			<article id="mainContent">
+				<!--Contenido1 tiene el titulo, contBienvenida y un carrusel con imagenes-->
+    			<section class="contenido">
+    				<!--Titulo del contenido-->
+    				<div class="titulos">POLÍTICAS DE COOKIES</div> 
+    				<!--contBienvenida sera el texto coon un pequeño resumen de la clinica y horarios-->
+    				<div class="contPolitica">
+    					<!--Fila que contendra el texto y horarios, cuando llega a un tamaño de pixeles se convierten en dos-->
+    					<div class="row">
+					      <!--Columna con el texto resumen-->
+					      <div class="col">
+					   		<h2>Lea nuestra Política de Cookies</h2>
+					        <p>La Web respeta su privacidad. A través de este Sitio La Web no recoge ni procesa ningún tipo de datos personales, excepto los recogidos a través de los formularios de contacto y las cookies, según se explica a continuación.
+			              	Este Sitio puede contener enlaces a otras páginas web de otras empresas vinculadas o medios sociales. Al pulsar sobre un enlace a otra página web de La Web o de terceros relacionados, recuerde que estas páginas tienen su propia política de privacidad. Por favor, antes de usar estas páginas web conozca su política de privacidad.
+			              	La Web no asume ninguna responsabilidad de ningún tipo sobre las páginas web de terceros que aparezcan vinculadas en este Sitio.
+			              	Recogida y uso de la información.</p>
+
+			              	<p>Para mejorar este Sitio en términos de rendimiento del sistema y facilidad de uso, así como para proporcionar información útil sobre nuestros productos y servicios, recogemos automáticamente y almacenamos información en los archivos de registro (log files) de su ordenador.</p>
+
+              				<p><strong>¿Qué tipo de datos incluye esta información?</strong></p>
+
+              				<p>
+                				<ul>
+				                  	<li>Su dirección IP</li>
+				                  	<li>Tipo de navegador</li>
+				                  	<li>Idioma seleccionado</li>
+				                  	<li>Sistema operativo</li>
+				                  	<li>Proveedor de servicios de Internet (ISP)</li>
+				                  	<li>Fecha/hora.</li>
+                				</ul>
+              				</p>
+
+              				<p><strong>¿Con qué finalidad usamos esta información?</strong></p>
+
+              				<p>Esta información se emplea de forma global para mejorar la gestión de este Sitio, analizar las tendencias y recoger datos demográficos sobre nuestros usuarios. La información recogida puede ser usada por nuestros servicios de marketing, publicidad y comunicación (por ejemplo, para optimizar y mejorar la experiencia del usuario y/o presentar ofertas especiales, estudios estadísticos y servicios más atractivos).</p>
+
+              				<p>Si la información no personal es utilizada en combinación con los Datos Personales, el conjunto es tratado como Datos Personales. Uso de cookies.</p>  
+              
+              				<p>Para optimizar nuestros servicios, este Sitio, los mensajes enviados por correo electrónico, los servicios online, los anuncios y las aplicaciones interactivas pueden utilizar “cookies”.</p>
+
+              				<p><strong>¿Qué es una cookie?</strong></p>    
+
+              				<p>Una cookie es un fichero (pequeño archivo) que se descarga en su ordenador al acceder a determinadas páginas web, normalmente formado por letras y números, enviado por el servidor de nuestra web al archivo de cookies de su navegador. Las cookies permiten a nuestra página web, entre otras cosas, almacenar y recuperar información sobre sus hábitos de navegación o de su equipo y recordar su presencia al establecerse una nueva conexión entre nuestro servidor y su navegador. El principal propósito de una cookie es permitir a nuestro servidor presentar páginas web personalizadas que puedan convertir la visita a la web de La Web en una experiencia individual y ajustada a las preferencias personales.</p> 
+
+              				<p><strong>¿Qué tipo de cookies emplea este Sitio?</strong></p>
+
+              				<p><strong>1.) La Web emplea dos tipos de cookies en este Sitio según el tiempo de permanencia:</strong></p>
+
+              				<p>– Cookies de sesión: son cookies temporales que permanecen en el archivo de cookies de su navegador mientras está en nuestra página web. Estas cookies son necesarios para ciertas aplicaciones o funciones y permiten que este Sitio funcione adecuadamente.</p>
+
+              				<p>– Cookies persistentes: favorecen la experiencia como usuario (por ejemplo, ofreciendo una navegación personalizada). Estas cookies permanecen en su navegador durante un periodo de tiempo más amplio. Este periodo depende de los ajustes que haya introducido en su navegador. Las cookies persistentes permiten que la información sea transferida al servidor de este Sitio cada vez que lo visita. También se conocen como cookies de seguimiento.</p>  
+
+              				<p><strong>2.) Según la finalidad para la que se tratan los datos obtenidos, este Sitio emplea los siguientes tipos de cookies:</strong></p>
+
+              				<p>– Cookies técnicas: Son aquéllas que le permiten la navegación a través de una página web, plataforma o aplicación y la utilización de las diferentes opciones o servicios que en esta existen como, por ejemplo, el control del tráfico y la comunicación de datos, identificar la sesión, acceder a partes de acceso restringido, recordar los elementos que integran un pedido, realizar el proceso de compra de un pedido, realizar la solicitud de inscripción o participación en un evento, utilizar elementos de seguridad durante la navegación, almacenar contenidos para la difusión de videos o sonido o compartir contenidos a través de redes sociales.</p>
+
+              				<p>– Cookies de personalización: Son aquéllas que le permiten acceder al servicio con algunas características de carácter general predefinidas en función de una serie de criterios en el terminal su (por ejemplo el idioma, el tipo de navegador a través del cual accede al servicio, la configuración regional desde donde accede al servicio, etc).</p>
+
+              				<p>– Cookies de análisis: Son aquéllas que bien tratadas por nosotros o por terceros, nos permiten cuantificar el número de usuarios y así realizar la medición y análisis estadístico de la utilización que hacen los usuarios del servicio ofertado. Para ello se analiza su navegación en nuestra página web con el fin de mejorar la oferta de productos o servicios que le ofrecemos.</p>
+
+              				<p>– Cookies publicitarias: Son aquéllas que, bien tratadas por nosotros o por terceros, nos permiten gestionar de la forma más eficaz posible la oferta de los espacios publicitarios que hay en la página web, adecuando el contenido del anuncio al contenido del servicio solicitado o al uso que realice de nuestra página web. Para ello podemos analizar sus hábitos de navegación en Internet y podemos mostrarle publicidad relacionada con su perfil de navegación.</p>
+
+              				<p>– Cookies de publicidad comportamental: Son aquéllas que, bien tratadas por nosotros o por terceros, nos permiten la gestión, de la forma más eficaz posible, de los espacios publicitarios que, en su caso, pudieran estar incluidos en este Sitio desde el que se presta el servicio solicitado. Estas cookies almacenan información de su comportamiento obtenida a través de la observación continuada de sus hábitos de navegación, lo que nos permite desarrollar un perfil específico para mostrar la publicidad en función del mismo.</p>
+					    </div>					               		
+    			</section>
+			</article>
+			
+		<!-- Aqui esta insertado las ventanas emergentes de la cuenta -->
+		<section>
+			<!-- Aqui esta insertada la ventana emergente de inicio de sension -->
+			<article>
+				<div class="modal fade" id="sesion">
+					<div class="modal-dialog modal-lg modal-dialog-centered">
+						<div class="modal-content">
+							<!-- cuerpo del diálogo -->
+							<div class="modal-body modales">
+								<h3>Inicio de Sesión</h3>  
+								<div class="contSesion">
+									<!-- Formulario -->
+									<form>
+										<div class="form-group">										
+											<label for="correo">Correo</label>
+											<input type="email" class="form-control" id="correo" placeholder="Correo">										
+										</div>
+										<div class="form-group">
+											<label for="nick">Nombre Cuenta</label>
+											<input type="text" class="form-control" id="nick" placeholder="Cuenta">
+										</div>									
+										<div class="form-group">
+										<label for="contra">Contraseña</label>										
+											<input type="password" class="form-control" id="contra" placeholder="Contraseña">										
+										</div>
+										<div class="btnIniciar">
+											<button type="submit" class="btn btn-primary"><a href="../../Inicio2/inicio2.html">Iniciar sesión</a> </button> 
+										</div>
+										<br>
+										<div class="mensaje">
+											<p>¿No tiene cuenta?, Pulse abajo en Registrese.</p>
+										</div>
+										<div class="form-group" id="salir">
+											<a type="button" class="btn close" data-toggle="modal" data-target="#registro" data-dismiss="modal">Regístrese</a> 
+										</div>
+										<div class="mensaje">
+											<p>¿Olvido su cuenta o contraseña?, Pulse abajo en Recuperar.</p>
+										</div>
+										<div class="form-group" id="salir">
+											<a type="button" class="btn close" data-toggle="modal" data-target="#recuperar" data-dismiss="modal">Recuperar</a> 
+										</div>										
+									</form>                    
+								</div>            
+							</div>
+							<!-- pie del diálogo -->
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<!-- Aqui esta insertada la ventana emergente de registrarse -->
+			<article>
+				<div class="modal fade" id="registro">
+					<div class="modal-dialog modal-lg modal-dialog-centered">
+						<div class="modal-content">
+							<!-- cuerpo del diálogo -->
+							<div class="modal-body modales">
+								<h3>Regístrese</h3>  
+								<div class="contSesion">
+									<!-- Formulario -->
+									<form>
+										<div class="form-group">										
+											<label for="correo">Correo</label>
+											<input type="email" class="form-control" id="correo" placeholder="Correo">										
+										</div>
+										<div class="form-group">
+											<label for="nombre">Nombre y Apellidos</label>
+											<input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellidos">
+										</div>
+										<div class="form-group">
+											<label for="nick">Nombre Cuenta</label>
+											<input type="text" class="form-control" id="nick" placeholder="Cuenta">
+										</div>									
+										<div class="form-group">
+											<label for="contra">Introduzca Contraseña</label>										
+											<input type="password" class="form-control" id="contra" placeholder="Contraseña">										
+										</div>
+										<div class="form-group">
+											<label for="contragain">Introduzca la Contraseña otra vez</label>										
+											<input type="password" class="form-control" id="contragain" placeholder="Repita la contraseña">										
+										</div>
+										<div class="btnIniciar">
+											<button type="submit" class="btn btn-primary"><a href="../../Inicio2/inicio2.html">Registrarse</a></button> 
+										</div>
+										<br>
+										<div class="mensaje">
+											<p>¿Ya tiene una cuenta?, Pulsa en Iniciar sesión</p>
+										</div>
+										<div class="form-group" id="salir">
+											<a type="button" class="btn close" data-toggle="modal" data-target="#sesion" data-dismiss="modal">Iniciar Sesión</a> 
+										</div>										
+									</form>                    
+								</div>            
+							</div>
+							<!-- pie del diálogo -->
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Aqui esta insertada la ventana emergente de recuperar -->
+				<div class="modal fade" id="recuperar">
+					<div class="modal-dialog modal-lg modal-dialog-centered">
+						<div class="modal-content">
+							<!-- cuerpo del diálogo -->
+							<div class="modal-body modales">
+								<h3>Recuperar cuenta</h3>  
+								<div class="contSesion">
+									<!-- Formulario -->
+									<form>
+										<div class="mensaje">
+											<p>Intruzca un correo y se le enviarán sus datos y los pasos para recuperar su cuenta.</p>
+										</div>
+										<div class="form-group">										
+											<label for="correo">Correo</label>
+											<input type="email" class="form-control" id="correo" placeholder="Introduza su correo o uno de emergencia">										
+										</div>
+										<div class="form-group">
+											<label for="nombre">Nombre y Apellidos</label>
+											<input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellidos">
+										</div>
+										<div class="btnIniciar">
+											<button type="submit" class="btn btn-primary">Enviar</button> 
+										</div>																													
+									</form>                    
+								</div>            
+							</div>
+							<!-- pie del diálogo -->
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+
+			<!--Footer principal que contiene pie1 y pie2-->
+			<footer id="mainFooter">
+				<!--Pie1 contendra las redes, los contactos y la direccion-->
+				<section class="pie1">
+					<!--Fila que contiene 3 columnas y cuando llega a ciertos px se vuelve en 3-->
+					<div class="row">
+						<!--Contiene una columna con las redes-->
+					    <div class="col-md-3">
+					    	<h2>Redes</h2> 
+					        <ul >
+					        	<li class="listado"><img src="../../../img/iconos/twitter.png" alt="Twitter">&nbsp&nbsp<a style="color: #FFFFFF" href="http://www.twitter.com" target="_blank">Twiter</a></li>
+					        	<li class="listado"><img src="../../../img/iconos/instagram.png" alt="Instagram">&nbsp&nbsp<a style="color: #FFFFFF" href="http://www.instagram.com" target="_blank">Instagram</a></li>
+					        	<li class="listado"><img src="../../../img/iconos/facebook.png" alt="Facebook">&nbsp&nbsp<a style="color: #FFFFFF" href="http://www.facebook.com" target="_blank">Facebook</a></li>
+					        </ul>				        
+					    </div>
+					    <!--Contiene una columna con los contactos-->
+					    <div class="col-md-5">
+					        <h2>Contactos</h2> 
+					        <ul >
+					        	<li class="listado">Correo → info@clinicacerbero.com</li>
+					        	<li class="listado">Teléfono → 956 95 72 00</li>
+					        	<li class="listado">Tlf URGENCIAS → 956 78 56 78</li>
+					        </ul>
+					    </div>
+					    <!--Contiene una columna con las direcciones-->
+					    <div class="col-md-4" >
+					        <h2>Dirección</h2> 
+					        <ul >
+					        	<li class="listado">c/Pagador Nº1 exterior </li>
+					        	<li class="listado">CP: 11500, El Puerto de Sta. María, Cádiz</li>				  
+					        </ul>
+					    </div>
+				    </div>
+				</section>
+				<!--Pie2 contendra los derechos, avisos legales, cookies y privacidad-->
+				<section class="pie2">
+					<!--Fila que contiene los derechos y politicas y cuando llega a unos px se vuelven 2-->
+					<div class="row">
+						<!--Columna con los derechos-->
+				    	<div class="col-xl-10">
+					        <p>Todos los derechos reservados © 2020 CLÍNICA VETERINARIA CERBERO. EL PUERTO DE SANTA MARÍA (CÁDIZ)</p>			        
+				      	</div>
+				      	<!--Columna con las politicas que tambien son enlaces a sus respectivas paginas-->
+				      	<div class="col-xl-2">
+					        <a href="../Avisos/avisos.html" style="color: #FFFFFF">
+					            Aviso Legal
+					        </a>|
+					        <a href="../Privacidad/privacidad.html" style="color: #FFFFFF">
+					            Política de Privacidad 
+					        </a>|
+					        <a href="#" style="color: #FFFFFF">
+					           Política de Cookies
+					       	</a>
+				      	</div>				      
+				</section>
+			</footer>
+			<!--Scripts-->
+				<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+		</div>		
+	</body>
+</html>

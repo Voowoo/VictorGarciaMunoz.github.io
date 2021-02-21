@@ -1,0 +1,53 @@
+/*FOOTER*/
+/*Estilo para el pie1*/
+.pie1{
+	background-color: $lightBlue;
+	color: $white;
+	border-top: $border-3px;
+
+}
+
+/*Estilos para las columnas del pie1*/
+.pie1 .row .col-md-4{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 1%;
+}
+
+.pie1 .row .col-md-3{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 1%;
+}
+
+.pie1 .row .col-md-5{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-right: $border-3px;
+	border-left: $border-3px;
+	margin-bottom: 1%;
+}
+
+/*Estilos para la lista de las redes*/
+.listado{
+	padding-top: 10px;
+	list-style: none;	
+}
+
+/*Estilos para las imagenes de las redes*/
+@for $c from 1 through 3 {
+    .listado img{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/*Estilos pie2*/
+.pie2{
+	background-color: $darkBlue;
+	color: $white;
+	font-size: $politics-size;
+}

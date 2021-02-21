@@ -1,0 +1,233 @@
+/*Fuente de la pagina*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+
+body{
+	font-family: 'Lato', sans-serif;
+}
+
+/*ESTILOS GENERALES DE LAS PAGINAS QUE SE REPITE O ES SIMILAR*/
+
+/*HEADER*/
+/*Estilo de la cabecera principal*/
+.mainHeader{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: sticky;
+    top: 0;
+	width: 100%;
+	background: #094592;
+	z-index: 1;	
+}
+
+/*Estilo de la cabecera1*/
+#cabecera1{
+	background: white;
+	width: 100%;
+	margin: 0 auto;
+}	
+
+/*Estilo del cuadro donde va el nombre y logo de la clinica*/
+#cuadroClinica{
+	display: flex;
+	align-items: center;
+	float: left;
+	padding-left: 15px;
+	text-decoration: none;
+}
+
+/*Estilo para la imagen de la clinica*/
+#cuadroClinica img{
+	width:80px;
+	height:80px;
+}
+
+/*Estilo nombre de la clinica*/
+.nombreClinica{
+	display: block;
+	margin-left: 0.5em;
+	font-size: 2.5em;
+	text-align: center;
+}
+
+/*Estilo de la miscelanea*/	
+.miscelanea{
+	display: flex;
+	float: right;
+}
+ 
+/*Estilos para el boton de inicio y registro de usuarios*/
+#cuenta{
+	list-style: none;
+	padding-right: 30px;
+	padding-top: 5px;
+}
+	
+#cuenta li{
+	display: inline-block;
+	line-height: 40px;
+}
+			
+#cuenta li a{
+	display: block;
+	padding: 0px 15px;
+	text-decoration: none;
+	color: black;
+
+}
+
+/*Estilo botonnes de inicar sesion*/
+.btnIniciar button a{
+	color: white;
+	text-decoration:none;
+}
+
+/*Estilos para el desplegable de redes*/
+#redes, #idiomas{
+	list-style: none;
+	padding-right: 10px;
+	padding-top: 5px;
+	
+}
+	
+#redes li , #idiomas li{
+	display: inline-block;
+	line-height: 40px;
+}
+			
+#redes li a, #idiomas li a{
+	display: block;
+	padding: 0px 15px;
+	text-decoration: none;
+	color: black;
+}
+
+/*Estilos para el cuadro de sesion y registro*/
+.contSesion{
+	margin-top: 15px;
+	width: 90%;
+	padding: 15px;
+	border: 2px solid #094592;
+}
+
+.btnIniciar, .mensaje, #salir{
+	display: flex;
+	justify-content: center
+}
+
+.modal-body{
+	display: flex;
+	flex-direction: column;
+	align-items:  center
+}
+
+.modal-body h3, .contSesion .form-group a{
+	color: #094592;
+}
+
+/*Estilo de la barra de navegacion*/		
+#barraNavegacion{
+	font-size: 1.5em;
+	text-align: center;	
+}
+
+.nav-link{
+	color: white;
+}
+
+/*Estilo titulos*/
+.titulos {
+	display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    width: 300px;
+    color: #FFFFFF;
+    font-size: 1.25em;
+    background-color: #04B1E8;
+    border: 3px solid #094592;
+    border-radius: 40px;
+    margin-bottom: 15px;
+    margin-top: 40px;
+}
+
+/*FOOTER*/
+/*Estilo para el pie1*/
+.pie1{
+	background-color: #04B1E8;
+	color: #FFFFFF;
+	border-top: 3px solid #094592;
+
+}
+
+/*Estilos para las columnas del pie1*/
+.pie1 .row .col-md-4{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 1%;
+}
+
+.pie1 .row .col-md-3{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 1%;
+}
+
+.pie1 .row .col-md-5{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-right: 3px solid #094592;
+	border-left: 3px solid #094592;
+	margin-bottom: 1%;
+}
+
+/*Estilos para la lista de las redes*/
+.listado{
+	padding-top: 10px;
+	list-style: none;	
+}
+
+/*Estlos para las imagenes de las redes*/
+.listado img{
+	width: 30px;
+    height: 30px;
+}
+
+.listado img{
+	width: 30px;
+    height: 30px;
+}
+
+.listado img{
+	width: 30px;
+    height: 30px;
+}
+
+/*Estilos pie2*/
+.pie2{
+	background-color: #094592;
+	color: #FFFFFF;
+	font-size: 0.70em;
+}
+
+/*Media queries*/
+@media (max-width: 1199px) {
+	.col-xl-10, .col-xl-2{
+    	display: flex;
+		justify-content: center;
+  	}	
+}
+
+@media (max-width: 768px){
+	.pie1 .row .col-md-3, .pie1 .row .col-md-4, .pie1 .row .col-md-5{
+		margin-top: 25px;
+	}
+
+	.pie1 .row .col-md-5{
+		border: none;
+	}
+}
+

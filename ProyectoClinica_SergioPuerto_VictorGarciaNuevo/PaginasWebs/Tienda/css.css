@@ -1,0 +1,44 @@
+/*contenedor principal*/
+#mainContent{
+	margin: 0 auto;
+	width: 90%;
+	margin-bottom: 60px;
+}
+
+/*Estilo del contenido*/
+.contenido{
+	display: flex;
+    flex-direction:column;
+    align-items: center;        
+}
+
+/*Estilo del contenido*/
+.contTienda{
+	text-align: justify;
+	margin-right:15%; 
+	margin-left:15%;
+}
+
+/*Estilo de la columnas*/
+.row{
+	padding-top: 1%;
+	margin: 0 auto;
+}
+
+/*Estilo del carrusel*/
+#carousel1{
+	margin-top: 50px;
+}
+
+/*Media query*/
+@media (max-width: 1199px) {
+	.col-xl-10, .col-xl-2{
+    	display: flex;
+		justify-content: center;
+  	}
+
+  	.contTienda{
+		margin-right:5%; 
+		margin-left:5%;
+	}	
+}

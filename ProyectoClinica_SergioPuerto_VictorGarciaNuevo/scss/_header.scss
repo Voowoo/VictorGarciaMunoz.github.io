@@ -1,0 +1,128 @@
+/*HEADER*/
+/*Estilo de la cabecera principal*/
+.mainHeader{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: sticky;
+    top: 0;
+	width: 100%;
+	background: $darkBlue;
+	z-index: 1;	
+}
+
+/*Estilo de la cabecera1*/
+#cabecera1{
+	background: $white;
+	width: 100%;
+	margin: 0 auto;
+}	
+
+/*Estilo del cuadro donde va el nombre y logo de la clinica*/
+#cuadroClinica{
+	display: flex;
+	align-items: center;
+	float: left;
+	padding-left: 15px;
+	text-decoration: none;
+}
+
+/*Estilo para la imagen de la clinica*/
+#cuadroClinica img{
+	width:80px;
+	height:80px;
+}
+
+/*Estilo nombre de la clinica*/
+.nombreClinica{
+	display: block;
+	margin-left: 0.5em;
+	font-size: $titleLogo-size;
+	text-align: center;
+}
+
+/*Estilo de la miscelanea*/	
+.miscelanea{
+	display: flex;
+	float: right;
+}
+ 
+/*Estilos para el boton de inicio y registro de usuarios*/
+#cuenta{
+	list-style: none;
+	padding-right: 30px;
+	padding-top: 5px;
+}
+	
+#cuenta li{
+	display: inline-block;
+	line-height: 40px;
+}
+			
+#cuenta li a{
+	display: block;
+	padding: 0px 15px;
+	text-decoration: none;
+	color: $black;
+
+}
+
+/*Estilo botonnes de inicar sesion*/
+.btnIniciar button a{
+	color: $white;
+	text-decoration:none;
+}
+
+/*Estilos para el desplegable de redes*/
+#redes, #idiomas{
+	list-style: none;
+	padding-right: 10px;
+	padding-top: 5px;
+	
+}
+	
+#redes li , #idiomas li{
+	display: inline-block;
+	line-height: 40px;
+}
+			
+#redes li a, #idiomas li a{
+	display: block;
+	padding: 0px 15px;
+	text-decoration: none;
+	color: $black;
+}
+
+/*Estilos para el cuadro de sesion y registro*/
+.contSesion{
+	margin-top: 15px;
+	width: 90%;
+	padding: 15px;
+	border: $border-3px;
+}
+
+.btnIniciar, .mensaje, #salir{
+	display: flex;
+	justify-content: center
+}
+
+.modal-body{
+	display: flex;
+	flex-direction: column;
+	align-items:  center
+}
+
+.modal-body h3, .contSesion .form-group a{
+	color: $darkBlue;
+}
+
+/*Estilo de la barra de navegacion*/		
+#barraNavegacion{
+	font-size: $titleNav-size;
+	text-align: center;	
+}
+
+.nav-link{
+	color: $white;
+}
+

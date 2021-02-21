@@ -1,0 +1,74 @@
+@import "variables";
+@import "body";
+
+/*Estilo del contenido1 (contacto y formulario)*/
+.contenido1{
+	@include contenidos1
+}
+
+/*Estilo de la columnas del formularios y horarios*/
+.row{
+	@include columnas;
+}
+
+.col-xl-7{
+	padding-right: 80px;
+}
+
+/*Estilo de los horarios*/
+.horario{
+    @include horarios;
+}
+
+/*Estilo del titulo de horarios*/
+.horarioTitulo{
+    @include horariosTitulos;
+}
+
+/*Estilo del contenido del horario*/
+.horarioContenido{
+    @include horariosContenidos;
+}
+
+
+/*Estilo contenido2 ubicacion*/
+.contenido2{
+	width: 100%;
+}
+
+/*Estilo de la ubicacion*/
+.ubicacion{
+	@include contenidosUbicacion;
+}
+
+
+/*Media query*/
+@media (max-width: 1199px) {
+	.col-xl-7{
+    	display: flex;
+    	flex-direction: column;
+		align-items: center;
+		padding-right: 0px;		
+  	}
+
+  	.col-xl-5 h2{
+		display: flex;
+    	flex-direction: column;
+		align-items: center;
+  		padding-top: 50px;
+  	}
+
+	.horario{
+		display: flex;
+	    align-self: center;
+	    height: 280px;
+        width: 400px;
+	    
+	}
+	.horarioContenido{
+	    display: flex;
+	    align-items: center;
+	    flex-direction: column;
+	    font-size: $titleBody-size;
+	}
+}

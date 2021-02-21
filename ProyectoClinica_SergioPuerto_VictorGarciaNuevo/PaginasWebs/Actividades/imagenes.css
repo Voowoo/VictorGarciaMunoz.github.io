@@ -1,0 +1,27 @@
+#gris{
+    filter: grayscale(100%);
+}
+
+#desenfoque{
+    filter:blur(3px);
+}
+
+#viejo{
+    filter:sepia(100%);
+}
+
+#satur{
+    filter:saturate(400%);
+}
+
+#invertido{
+    filter:invert(100%);
+}
+
+#color{
+   filter:hue-rotate(180deg);
+}
+
+#contras{
+    filter:contrast(200%);
+}

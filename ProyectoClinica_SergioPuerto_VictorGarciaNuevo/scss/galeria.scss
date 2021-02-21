@@ -1,0 +1,37 @@
+@import "variables";
+@import "body";
+
+/*Estilo contenido principal*/
+#mainContent{
+   @include contenidoPrincipal;
+}
+
+
+/*Estilo del contenido*/
+.contenido{
+	@include contenidos1;
+}
+
+/*Estilo de las columnas*/
+.row{
+	@include columnas;
+}
+
+
+/*Estilo del contenido*/
+.contGaleria{
+	@include contenidoServicios;
+}
+
+#carousel1{
+	@include carrusel;
+}
+
+/*Media query*/
+@media (max-width: 1199px) {
+  	.contGaleria{
+		margin-right:5%; 
+		margin-left:5%;
+	}	
+}
+

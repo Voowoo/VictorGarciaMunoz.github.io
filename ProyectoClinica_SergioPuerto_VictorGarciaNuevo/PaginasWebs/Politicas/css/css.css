@@ -1,0 +1,42 @@
+/*BODY*/
+#mainContent{
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 60px;
+}
+
+/*Estilos de los titulos*/
+.titulos{
+	display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    width: 300px;
+    color: #FFFFFF;
+    font-size: 1.25em;
+    background-color: #04B1E8;
+    border: 3px solid #094592;
+    border-radius: 40px;
+    margin-bottom: 15px;
+    margin-top: 40px;
+}
+
+/*Estilo del contenido*/
+.contenido{
+	display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin: auto 0;
+	padding-left: 10%; 
+	padding-right: 10%;
+    text-align: justify;
+}
+
+/*Estilo de la columnas del contBienvenido y horarios*/
+.row{
+	padding-top: 1%;
+	margin: 0 auto;
+}
+
+
+

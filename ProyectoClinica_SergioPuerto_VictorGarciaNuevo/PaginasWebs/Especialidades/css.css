@@ -1,0 +1,90 @@
+#mainContent{
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 60px;
+}
+/*BODY*/
+/*Estilo de la imagen*/
+
+/*Estilos de los titulos*/
+.titulos {
+	display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    width: 300px;
+    color: #FFFFFF;
+    font-size: 1.25em;
+    background-color: #04B1E8;
+    border: 3px solid #094592;
+    border-radius: 40px;
+    margin-bottom: 15px;
+    margin-top: 40px;
+}
+
+
+/*Estilo de la columnas del contBienvenido y horarios*/
+.row{
+	padding-top: 1%;
+	margin: 0 auto;
+}
+
+/*Estilos del contenido*/
+.contenido{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin: auto 0;
+    padding-left: 2%; 
+    padding-right: 2%;
+}
+
+/*Estilo del contenidoServicios*/
+.contServicios{
+    text-align: justify;
+    margin-right:15%; 
+    margin-left:15%;
+}
+
+/*Estilos para las columnas*/
+.servicios .row .col-md-4{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 15px;
+	color: #04B1E8;
+}
+
+.col-md-4 img{
+    width: 150px;
+    height: 150px;
+}
+
+.col-md-4 h4{
+    margin-top:20px;
+}
+
+/*Los desplegables de los servicios*/
+.card{
+    border: 2px solid #094592;
+}
+
+.card-header{   
+    display: flex;
+    justify-content: center;
+    background: #FFFFFF;
+}
+
+.card-body{
+    text-align: justify;
+}
+
+
+/*Media queries*/
+@media (max-width: 1199px) {
+    .contServicios{
+        margin-right:5%; 
+        margin-left:5%;
+    }
+}
+

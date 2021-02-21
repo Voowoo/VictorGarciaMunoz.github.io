@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/*Colores*/
+/*Bordes*/
+/*Tamaños fuentes*/
+/*Contendra todos los estilos que se repitan en todas las paginas o que se repitan en varias y con frecuencia*/
+/*titulos esta en todas las paginas*/
+.titulos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  text-align: center;
+  width: 300px;
+  color: #FFFFFF;
+  font-size: 1.25em;
+  background-color: #04B1E8;
+  border: 3px solid #094592;
+  border-radius: 40px;
+  margin-bottom: 15px;
+  margin-top: 40px;
+}
+
+/*Hace referencia a mainContent esta en Conocenos, Especialidades, Politicas y Galeria*/
+/*Hace referencia a contenido1 esta Inicio, Citas, Empleo y Galeria*/
+/*Hace referencia a row esta en todas las paginas*/
+/*Hace referencia a horario esta en Inicio, Citas y Empleo*/
+/*Hace referencia a horarioTitulo esta en Inicio, Citas y Empleo*/
+/*Hace referencia a horarioContenidos esta en Inicio, Citas y Empleo*/
+/*Hace referencia a varios contenidos esta en Inicio, Conocenos, Empleo y Especialidades*/
+/*Hace referencia a contenido2 esta en Inicio, Citas y Empleo*/
+/*Hace referencia a los estilos de las columnmas para los diversos servicios de la clinica esta en Inicio y Especialidades*/
+/*Hace referencia a card que seran los desplegables de los servicios esta en Inicio y Especialidades */
+/*Hace referencia a card-header que seran los desplegables de los servicios esta en Inicio y Especialidades */
+/*Hace referencia a card-body que seran los desplegables de los servicios esta en Inicio y Especialidades */
+/*Hace referencia a carousel esta en Inicio, Galeria, Conocenos y Tienda*/
+/*contenedor principal*/
+#mainContent {
+  margin: 0 auto;
+  width: 90%;
+  margin-bottom: 60px;
+}
+
+/*Estilo del contenido1 y contenido2*/
+.contenido1, .contenido2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*Estilo del contenidoInstalaciones y contVeterinarios*/
+.contInstalaciones, .contVeterinarios {
+  text-align: justify;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+/*Estilo de la columnas*/
+.row {
+  padding-top: 1%;
+  margin: 0 auto;
+}
+
+/*Estilo del carrusel*/
+#carousel1 {
+  margin-top: 50px;
+}
+
+/*Estilos para las columnas de los veterinarios*/
+.veterinarios .row .col-lg-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+  color: #04B1E8;
+}
+
+.col-lg-4 h5 {
+  font-size: 0.9em;
+}
+
+.col-lg-4 img {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 20px;
+  border: 3px solid #094592;
+}
+
+/*Media query*/
+@media (max-width: 1199px) {
+  .contInstalaciones, .contVeterinarios {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
+/*# sourceMappingURL=conocenos.css.map */

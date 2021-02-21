@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Galería</title>
+		<link rel="icon" type="image/png" href="../../img/logo/logo-sin-nombre.png">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../css/scss-principal.css">
+		<link rel="stylesheet" href="../../css/galeria.css">
+</head>
+	<body>
+		<div class="pagina">
+		<!--Cabecera principal contiene Cabecera1 y nav del menu-->
+			<header class="mainHeader">
+				<!--Cabecera1 contiene cuadroClinica y miscelanea-->
+				<section id="cabecera1">
+					<!--cuadroClinica contiene el logo y nombre de la clinica-->
+					<div id="cuadroClinica">
+						<img src = "../../img/logo/logo-sin-nombre.png">
+						<span class="nombreClinica">Clínica Cerbero</span>
+					</div> 
+					<!--miscelanea contiene los botones para cuenta y las redes-->
+					<nav class="miscelanea">
+						<!--cuenta contiene una lista con dos botones para el registro-->
+						<ul id="cuenta">
+							<li><a class="dropdown-item" data-toggle="modal" data-target="#registro" href="#">Registrarse</a></li>
+							<li><a class="dropdown-item" data-toggle="modal" data-target="#sesion" href="#">Iniciar Sesión</a></li>
+						</ul>
+						<!--redes contiene una lista con las redes-->
+						<ul id="redes">
+							<li>
+								<!--Boton el cual es un desplegable con las redes-->
+								<div class="dropdown">
+							    	<button class="btn btn-primary dropdown-toggle" type="button" id="dropdown1" data-toggle="dropdown">
+							        Redes
+							      	</button>
+							      	<div class="dropdown-menu">
+							        	<a class="dropdown-item" href="http://www.twitter.com" target="_blank"><img src="../../img/iconos/twitter.png" width="20" height="20">&nbspTwitter</a>
+							        	<a class="dropdown-item" href="http://www.instagram.com" target="_blank"><img src="../../img/iconos/instagram.png" width="20" height="20">&nbspInstagram</a>
+							        	<a class="dropdown-item" href="http://www.facebook.com" target="_blank"><img src="../../img/iconos/facebook.png" width="20" height="20">&nbspFacebook</a>
+							      	</div>
+							    </div>  
+							</li>
+						</ul>
+						<!--redes contiene una lista con los idiomas-->
+						<ul id="idiomas">
+							<li>
+								<!--Boton el cual es un desplegable con los idiomas-->
+								<div class="dropdown">
+							    	<button class="btn btn-primary dropdown-toggle" type="button" id="dropdown1" data-toggle="dropdown">
+							        Idiomas
+							      	</button>
+							      	<div class="dropdown-menu">
+							      		<!--Idiomas disponibles-->
+							        	<a class="dropdown-item" href="#"><img src="../../img/iconos/ingles.png" width="20" height="20">&nbspEnglish</a>
+							        	<a class="dropdown-item" href="#"><img src="../../img/iconos/español.png" width="20" height="20">&nbspEspañol</a>							 
+							      	</div>
+							    </div>  
+							</li>
+						</ul>
+						<ul id="idiomas">
+							
+							<li>
+								<!--Boton el cual es un desplegable con los idiomas-->
+								<div class="dropdown">
+							    	<button class="btn btn-primary dropdown-toggle" type="button" id="dropdown1" data-toggle="dropdown">
+							        Ejercicios
+							      	</button>
+							      	<div class="dropdown-menu">
+							      		<!--Idiomas disponibles no es funcional es decir que si le das no te lo traduce, pero cuando ya se
+							      			le ponga el js y las funcionalidades la idea es que te traduzca las paginas-->
+                                              <a class="dropdown-item" href="../Actividades/video.html"><strong>Video</strong></a>
+                                              <a class="dropdown-item" href="../Actividades/svg.html"><strong>SVG</strong></a>
+                                              <a class="dropdown-item" href="../Actividades/picture.html"><strong>Picture</strong></a>
+                                              <a class="dropdown-item" href="../Actividades/animacion.html"><strong>Animación</strong></a>
+                                              <a class="dropdown-item" href="../Actividades/audio.html"><strong>Audio</strong></a>
+							      	</div>
+							    </div>  
+							</li>
+						</ul>
+					</nav> 	
+				</section>
+				<!--Barra de navegacion contiene el menu con las opciones-->
+				<nav class="navbar navbar-expand-xl " id="barraNavegacion" >
+					<!--El boton sera un icono pero lo dejo blanco de mientras-->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones" style="background: white">
+					 	<img src = "../../img/iconos/menu.png" width="25px" height="25px">
+					</button>
+					<!--Elementos del menu el cual colapsan en un boton-->
+					<div class="collapse navbar-collapse" id="opciones">   
+					    <ul class="navbar-nav" id="elemenentos">
+					    	<!--Cada uno de los elementos del menu-->
+					      	<li class="nav-item">
+			                  <a class="nav-link" href="../Inicio/inicio.html" >&nbsp&nbspINICIO&nbsp&nbsp</a>
+			                </li>
+			                <li class="nav-item">
+			                  <a class="nav-link" href="animacion.html">&nbsp&nbspANIMACIÓN&nbsp&nbsp&nbsp&nbsp</a>
+			                </li>
+			                <li class="nav-item">
+			                  <a class="nav-link" href="imagenes.html">&nbsp&nbspIMÁGENES&nbsp&nbsp</a>
+			                </li>
+			                <li class="nav-item">
+			                  <a class="nav-link" href="#">&nbsp&nbspSVG&nbsp&nbsp</a>
+			                </li>
+			                <li class="nav-item">
+			                  <a class="nav-link" href="audio.html">&nbsp&nbspAUDIO&nbsp&nbsp</a>
+			                </li>
+			                <li class="nav-item">
+			                  <a class="nav-link" href="video.html">&nbsp&nbspVIDEO&nbsp&nbsp</a>
+			                </li>
+			                <li class="nav-item">
+			                  <a class="nav-link" href="picture.html">&nbsp&nbspPICTURE&nbsp&nbsp</a>
+			                </li>   
+					      </ul>
+					</div>
+				</nav>				
+			</header>
+			
+			<!--Contenido principal-->
+			<article id="mainContent">
+				<!--contenido tiene el titulo, contGaleria y un carrusel con imagenes-->
+    			<section class="contenido">
+
+					<div class="titulos">Ejemplo SVG</div>    				
+					<svg width="600" height="310">
+						<rect width="600" height="300" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+					</svg>
+                    
+                    <div class="titulos">Ejemplo SVG con PATH</div>
+					<svg height="400" width="500">
+						<path id="lineAB" d="M 100 350 l 150 -300" stroke="red"
+						stroke-width="3" fill="none" />
+						<path id="lineBC" d="M 250 50 l 150 300" stroke="red"
+						stroke-width="3" fill="none" />
+						<path d="M 175 200 l 150 0" stroke="green" stroke-width="3"
+						fill="none" />
+						<path d="M 100 350 q 150 -300 300 0" stroke="blue"
+						stroke-width="5" fill="none" />
+						<!-- Mark relevant points -->
+						<g stroke="black" stroke-width="3" fill="black">
+						  <circle id="pointA" cx="100" cy="350" r="3" />
+						  <circle id="pointB" cx="250" cy="50" r="3" />
+						  <circle id="pointC" cx="400" cy="350" r="3" />
+						</g>
+						<!-- Label the points -->
+						<g font-size="30" font-family="sans-serif" fill="black" stroke="none"
+						text-anchor="middle">
+						  <text x="100" y="350" dx="-30">A</text>
+						  <text x="250" y="50" dy="-10">B</text>
+						  <text x="400" y="350" dx="30">C</text>
+						</g>
+					</svg>
+    			</section>   			
+			</article>
+			
+			<!-- Aqui esta insertado las ventanas emergentes de la cuenta -->
+			<section>
+				<!-- Aqui esta insertada la ventana emergente de inicio de sension -->
+				<article>
+					<div class="modal fade" id="sesion">
+						<div class="modal-dialog modal-lg modal-dialog-centered">
+							<div class="modal-content">
+								<!-- cuerpo del diálogo -->
+								<div class="modal-body modales">
+									<h3>Inicio de Sesión</h3>  
+									<div class="contSesion">
+										<!-- Formularios-->
+										<form>
+											<div class="form-group">										
+												<label for="correo">Correo</label>
+												<input type="email" class="form-control" id="correo" placeholder="Correo">										
+											</div>
+											<div class="form-group">
+												<label for="nick">Nombre Cuenta</label>
+												<input type="text" class="form-control" id="nick" placeholder="Cuenta">
+											</div>									
+											<div class="form-group">
+											<label for="contra">Contraseña</label>										
+												<input type="password" class="form-control" id="contra" placeholder="Contraseña">										
+											</div>
+											<div class="btnIniciar">
+												<button type="submit" class="btn btn-primary"><a href="../Inicio2/inicio2.html">Iniciar sesión</a> </button> 
+											</div>
+											<br>
+											<div class="mensaje">
+												<p>¿No tiene cuenta?, Pulse abajo en Registrese.</p>
+											</div>
+											<div class="form-group" id="salir">
+												<a type="button" class="btn close" data-toggle="modal" data-target="#registro" data-dismiss="modal">Regístrese</a> 
+											</div>
+											<div class="mensaje">
+												<p>¿Olvido su cuenta o contraseña?, Pulse abajo en Recuperar.</p>
+											</div>
+											<div class="form-group" id="salir">
+												<a type="button" class="btn close" data-toggle="modal" data-target="#recuperar" data-dismiss="modal">Recuperar</a> 
+											</div>										
+										</form>                    
+									</div>            
+								</div>
+								<!-- pie del diálogo -->
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+
+				<!-- Aqui esta insertada la ventana emergente de registrarse-->
+				<article>
+					<div class="modal fade" id="registro">
+						<div class="modal-dialog modal-lg modal-dialog-centered">
+							<div class="modal-content">
+								<!-- cuerpo del diálogo -->
+								<div class="modal-body modales">
+									<h3>Regístrese</h3>  
+									<div class="contSesion">
+										<!-- Formularios-->
+										<form>
+											<div class="form-group">										
+												<label for="correo">Correo</label>
+												<input type="email" class="form-control" id="correo" placeholder="Correo">										
+											</div>
+											<div class="form-group">
+												<label for="nombre">Nombre y Apellidos</label>
+												<input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellidos">
+											</div>
+											<div class="form-group">
+												<label for="nick">Nombre Cuenta</label>
+												<input type="text" class="form-control" id="nick" placeholder="Cuenta">
+											</div>									
+											<div class="form-group">
+												<label for="contra">Introduzca Contraseña</label>										
+												<input type="password" class="form-control" id="contra" placeholder="Contraseña">										
+											</div>
+											<div class="form-group">
+												<label for="contragain">Introduzca la Contraseña otra vez</label>										
+												<input type="password" class="form-control" id="contragain" placeholder="Repita la contraseña">										
+											</div>
+											<div class="btnIniciar">
+												<button type="submit" class="btn btn-primary"><a href="../Inicio2/inicio2.html">Registrarse</a></button> 
+											</div>
+											<br>
+											<div class="mensaje">
+												<p>¿Ya tiene una cuenta?, Pulsa en Iniciar sesión</p>
+											</div>
+											<div class="form-group" id="salir">
+												<a type="button" class="btn close" data-toggle="modal" data-target="#sesion" data-dismiss="modal">Iniciar Sesión</a> 
+											</div>										
+										</form>                    
+									</div>            
+								</div>
+								<!-- pie del diálogo -->
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Aqui esta insertada la ventana emergente de recuperar-->
+					<div class="modal fade" id="recuperar">
+						<div class="modal-dialog modal-lg modal-dialog-centered">
+							<div class="modal-content">
+								<!-- cuerpo del diálogo -->
+								<div class="modal-body modales">
+									<h3>Recuperar cuenta</h3>  
+									<div class="contSesion">
+										<!--Formularios-->
+										<form>
+											<div class="mensaje">
+												<p>Intruzca un correo y se le enviarán sus datos y los pasos para recuperar su cuenta.</p>
+											</div>
+											<div class="form-group">										
+												<label for="correo">Correo</label>
+												<input type="email" class="form-control" id="correo" placeholder="Introduza su correo o uno de emergencia">										
+											</div>
+											<div class="form-group">
+												<label for="nombre">Nombre y Apellidos</label>
+												<input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellidos">
+											</div>
+											<div class="btnIniciar">
+												<button type="submit" class="btn btn-primary">Enviar</button> 
+											</div>																													
+										</form>                    
+									</div>            
+								</div>
+								<!-- pie del diálogo -->
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+			</section>
+
+			<!--Footer principal que contiene pie1 y pie2-->
+			<footer id="mainFooter">
+				<!--Pie1 contendra las redes, los contactos y la direccion-->
+				<section class="pie1">
+					<!--Fila que contiene 3 columnas y cuando llega a ciertos px se vuelve en 3-->
+					<div class="row">
+						<!--Contiene una columna con las redes-->
+					    <div class="col-md-3">
+					    	<h2>Redes</h2> 
+					        <ul >
+					        	<li class="listado"><img src="../../img/iconos/twitter.png" alt="Twitter">&nbsp&nbsp<a style="color: #FFFFFF" href="http://www.twitter.com" target="_blank">Twiter</a></li>
+					        	<li class="listado"><img src="../../img/iconos/instagram.png" alt="Instagram">&nbsp&nbsp<a style="color: #FFFFFF" href="http://www.instagram.com" target="_blank">Instagram</a></li>
+					        	<li class="listado"><img src="../../img/iconos/facebook.png" alt="Facebook">&nbsp&nbsp<a style="color: #FFFFFF" href="http://www.facebook.com" target="_blank">Facebook</a></li>
+					        </ul>				        
+					    </div>
+					    <!--Contiene una columna con los contactos-->
+					    <div class="col-md-5">
+					        <h2>Contactos</h2> 
+					        <ul >
+					        	<li class="listado">Correo → info@clinicacerbero.com</li>
+					        	<li class="listado">Teléfono → 956 95 72 00</li>
+					        	<li class="listado">Tlf URGENCIAS → 956 78 56 78</li>
+					        </ul>
+					    </div>
+					    <!--Contiene una columna con las direcciones-->
+					    <div class="col-md-4" >
+					        <h2>Dirección</h2> 
+					        <ul >
+					        	<li class="listado">c/Pagador Nº1 exterior </li>
+					        	<li class="listado">CP: 11500, El Puerto de Sta. María, Cádiz</li>				  
+					        </ul>
+					    </div>
+				    </div>
+				</section>
+				<!--Pie2 contendra los derechos, avisos legales, cookies y privacidad-->
+				<section class="pie2">
+					<!--Fila que contiene los derechos y politicas y cuando llega a unos px se vuelven 2-->
+					<div class="row">
+						<!--Columna con los derechos-->
+				    	<div class="col-xl-10">
+					        <p>Todos los derechos reservados © 2020 CLÍNICA VETERINARIA CERBERO. EL PUERTO DE SANTA MARÍA (CÁDIZ)</p>			        
+				      	</div>
+				      	<!--Columna con las politicas que tambien son enlaces a sus respectivas paginas-->
+				      	<div class="col-xl-2">
+					        <a href="../Politicas/Avisos/avisos.html" style="color: #FFFFFF">
+					            Aviso Legal
+					        </a>|
+					        <a href="../Politicas/Privacidad/privacidad.html" style="color: #FFFFFF">
+					            Política de Privacidad 
+					        </a>|
+					        <a href="../Politicas/Cookies/cookies.html" style="color: #FFFFFF">
+					           Política de Cookies
+					       	</a>
+				      	</div>				      
+				</section>
+			</footer>
+			<!--Scripts-->
+				<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+		</div>		
+	</body>
+</html>

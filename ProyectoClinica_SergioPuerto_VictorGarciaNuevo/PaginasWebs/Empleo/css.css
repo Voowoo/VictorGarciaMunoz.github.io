@@ -1,0 +1,114 @@
+
+/*Estilo del contenido1 (contacto y formulario)*/
+.contenido1{
+	display: flex;
+    flex-direction:column;
+    align-items: center;
+	padding-left: 2%; 
+	padding-right: 2%;
+	margin: 0 auto;
+	width: 90%;
+}
+
+/*Estilo de la columnas del formularios y horarios*/
+.row{
+	padding-top: 1%;
+	margin: 0 auto;
+}
+
+/*Estilo contEmpleo*/
+.contEmpleo{
+    text-align: justify;
+    margin-right:15%; 
+    margin-left:15%;
+}
+
+.col-xl-7{
+	padding-right: 80px;
+}
+
+/*Estilo de los horarios*/
+.horario{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 250px;
+    border: 3px solid #094592;
+}
+
+/*Estilo del titulo de horarios*/
+.horarioTitulo{
+    display: flex;
+    align-self: flex-start;
+    justify-content: center;
+    width: 180px;
+    color: #FFFFFF;
+    font-size: 1.25em;
+    background-color: #04B1E8;
+    border: 3px solid #094592;
+    border-top: none;
+    border-left: none;
+}
+
+/*Estilo del contenido del horario*/
+.horarioContenido{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1em;
+}
+
+
+/*Estilo contenido2 ubicacion*/
+.contenido2{
+	width: 100%;
+}
+
+/*Estilo de la ubicacion*/
+.ubicacion{
+	display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin: auto 0;
+    margin-top: 40px;
+}
+
+
+/*Media query*/
+@media (max-width: 1199px) {
+	.col-xl-7{
+    	display: flex;
+    	flex-direction: column;
+		align-items: center;
+		padding-right: 0px;		
+  	}
+
+  	.col-xl-5 h2{
+		display: flex;
+    	flex-direction: column;
+		align-items: center;
+  		padding-top: 50px;
+  	}
+
+	.horario{
+		display: flex;
+	    align-self: center;
+	    height: 280px;
+        width: 400px;
+	    
+	}
+	.horarioContenido{
+	    display: flex;
+	    align-items: center;
+	    flex-direction: column;
+	    font-size: 1.25em;
+	}
+
+    .contEmpleo{
+        margin-right:5%; 
+        margin-left:5%;   
+    }
+}
+
+
+

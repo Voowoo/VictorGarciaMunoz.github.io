@@ -1,0 +1,42 @@
+@import "variables";
+@import "body";
+
+/*contenedor principal*/
+#mainContent{
+	@include contenidoPrincipal;
+}
+
+/*Estilo del contenido*/
+.contenido{
+	display: flex;
+    flex-direction:column;
+    align-items: center;        
+}
+
+/*Estilo del contenido*/
+.contTienda{
+	@include contenidosVarios;
+}
+
+/*Estilo de la columnas*/
+.row{
+	@include columnas;
+}
+
+/*Estilo del carrusel*/
+#carousel1{
+	@include carrusel;
+}
+
+/*Media query*/
+@media (max-width: 1199px) {
+	.col-xl-10, .col-xl-2{
+    	display: flex;
+		justify-content: center;
+  	}
+
+  	.contTienda{
+		margin-right:5%; 
+		margin-left:5%;
+	}	
+}

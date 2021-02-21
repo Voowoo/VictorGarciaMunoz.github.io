@@ -1,0 +1,45 @@
+@import "variables";
+@import "body";
+
+/*Estilo del contenido1 (contacto y formulario)*/
+.contenido{
+	@include contenido1;
+
+}
+/*Estilo de la foto de perfil*/
+.foto-perfil {
+    width: 250px;
+    height: 250px;
+    border: $border-2px;
+    border-radius: 30px;
+}
+
+
+/*Estilo de la columnas del perfil*/
+.row{
+	@include columnas;
+}
+
+.col-lg-5, .col-lg-7{
+    display: flex;
+    justify-content: center;
+}
+
+.col-lg-5{
+    padding-right: 100px;
+    padding-top: 20px;
+}
+
+
+/*Media query*/
+@media (max-width: 991px) {
+	.col-lg-5{    	
+    padding-right: 0px;
+  }
+
+  .col-lg-7{		
+    padding-top: 50px;
+  }
+    
+
+}

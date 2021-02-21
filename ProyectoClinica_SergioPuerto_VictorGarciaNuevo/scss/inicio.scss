@@ -1,0 +1,121 @@
+@import "variables";
+@import "body";
+
+/*BODY*/
+/*Estilo de la imagen*/
+.imagen{
+	width: 100%;
+}
+
+/*Estilo del contenido1 (contBienvenida y horarios)*/
+.contenido1{
+	@include contenidos1;
+}
+
+/*Estilo de la columnas del contBienvenido y horarios*/
+.row{
+	@include columnas;
+}
+
+
+.col-xl-4{
+	display: flex;
+	justify-content: flex-end;
+	padding-top: 50px;
+}
+
+/*Estilo del contenido*/
+.contBienvenida{
+	text-align: justify;
+}
+
+/*Estilo de los horarios*/
+.horario{
+    @include horarios;
+}
+
+/*Estilo del titulo de horarios*/
+.horarioTitulo{
+    @include horariosTitulos;
+}
+
+/*Estilo del contenido del horario*/
+.horarioContenido{
+    @include horariosContenidos;
+}
+
+/*Estilo carrusel*/
+#carousel1{
+	@include carrusel;
+}
+
+/*Estilos del contenido2 servicios destacados*/
+.contenido2{
+	@include contenidosUbicacion;
+}
+
+.contServicios{
+	@include contenidosVarios;
+}
+
+/*Estilos para las columnas*/
+.servicios .row .col-md-4{
+	@include columnasServicios;
+}
+
+.col-md-4 h4{
+    margin-top:20px;
+}
+
+.col-md-4 img{
+    width: 150px;
+    height: 150px;
+}
+
+/*Los desplegables de los servicios*/
+.card{
+    @include cardServicios;
+}
+
+.card-header{   
+    @include cardHeader;
+}
+
+.card-body{
+    @include cardBody;
+}
+
+/*Estilo contenido3 ubicacion*/
+.contenido3{
+	width: 100%;
+}
+
+/*Estilo de la ubicacion*/
+.ubicacion{
+	@include contenidosUbicacion;
+}
+
+
+/*Media query*/
+@media (max-width: 1199px) {
+	.col-xl-4{
+    	display: flex;
+		justify-content: center;
+		padding-top: 30px;
+  	}
+	.horario{
+	    height: 280px;
+	    
+	}
+	.horarioContenido{
+	    display: flex;
+	    align-items: center;
+	    flex-direction: column;
+	    font-size: $titleBody-size;
+	}
+
+	.contServicios{
+        margin-right:5%; 
+        margin-left:5%;
+    }
+}

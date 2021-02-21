@@ -1,0 +1,63 @@
+@import "variables";
+@import "body";
+
+#mainContent{
+   @include contenidoPrincipal;
+}
+
+/*Estilo de la columnas del contBienvenido y horarios*/
+.row{
+	@include columnas;
+}
+
+/*Estilos del contenido*/
+.contenido{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin: auto 0;
+    padding-left: 2%; 
+    padding-right: 2%;
+}
+
+/*Estilo del contenidoServicios*/
+.contServicios{
+   @include contenidosVarios;
+}
+
+/*Estilos para las columnas*/
+.servicios .row .col-md-4{
+	@include columnasServicios;
+}
+
+.col-md-4 img{
+    width: 150px;
+    height: 150px;
+}
+
+.col-md-4 h4{
+    margin-top:20px;
+}
+
+/*Los desplegables de los servicios*/
+.card{
+    @include cardServicios;
+}
+
+.card-header{   
+    @include cardHeader;
+}
+
+.card-body{
+    @include cardBody;
+}
+
+
+/*Media queries*/
+@media (max-width: 1199px) {
+    .contServicios{
+        margin-right:5%; 
+        margin-left:5%;
+    }
+}
+

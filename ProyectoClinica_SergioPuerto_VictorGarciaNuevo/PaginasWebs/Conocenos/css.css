@@ -1,0 +1,63 @@
+/*contenedor principal*/
+#mainContent{
+	margin: 0 auto;
+	width: 90%;
+	margin-bottom: 60px;
+}
+
+/*Estilo del contenido1 y contenido2*/
+.contenido1, .contenido2{
+	display: flex;
+    flex-direction:column;
+    align-items: center;        
+}
+
+/*Estilo del contenidoInstalaciones y contVeterinarios*/
+.contInstalaciones, .contVeterinarios{
+	text-align: justify;
+	margin-right:15%; 
+	margin-left:15%;
+}
+
+/*Estilo de la columnas*/
+.row{
+	padding-top: 1%;
+	margin: 0 auto;
+}
+
+/*Estilo del carrusel*/
+#carousel1{
+	margin-top: 50px;
+}
+
+
+/*Estilos para las columnas*/
+.veterinarios .row .col-lg-4{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 30px;
+	color: #04B1E8;
+}
+
+.col-lg-4 h5{
+    font-size: 0.9em;
+}
+
+.col-lg-4 img{
+	width: 250px;
+	height: 250px;
+	margin-bottom: 20px;
+	border: 3px solid #094592;
+
+}
+
+
+/*Media query*/
+@media (max-width: 1199px) {
+  	.contInstalaciones, .contVeterinarios{
+		margin-right:5%; 
+		margin-left:5%;
+	}	
+}
+
